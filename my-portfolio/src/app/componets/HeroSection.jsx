@@ -8,8 +8,8 @@ export default function HeroSection() {
   
   return (
     <section>
-<div className='grid grid-cols-l sm:grid-cols-12 my-12'>
-  <div className='col-span-7 place-self-center sm:text-left'>
+<div className='grid grid-cols-l sm:grid-cols-12 my-12 '>
+  <div className='col-span-7 place-self-center sm:text-left mt-20'>
   <h1 className='mb-2 mr-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold'> 
   <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-400'>
     Hello, I'm{" "} 
@@ -45,7 +45,7 @@ export default function HeroSection() {
 
 
   <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
-    <div className='rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative'>
+    <div className='rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative mt-20'>
     <Image src = "/assets/my.jpg" alt = "my" width = {300} height = {300} className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
     </div>
 
