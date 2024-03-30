@@ -1,13 +1,14 @@
 "use client";
-import Image from "next/image";
+import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { useState, useEffect } from "react";
-import { darkTheme, lightTheme } from "./utils/Themes.js";
+import { darkTheme, lightTheme } from "./utils/Themes";
 import HeroSection from "./componets/HeroSection";
 import Navbar from "./componets/Navbar";
 import AboutSection from "./componets/AboutSection";
 import SkillsSection from "./componets/SkillsSection";
 import styled from "styled-components";
+import StarCanvas from "./componets/StarBackground";
+import Projects from "./componets/Projects/index";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -34,14 +35,21 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col container ">
       <Navbar />
+
       <Body>
         <div>
           <HeroSection />
+          {/* <BgAnimation /> */}
+
+          <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+            <StarCanvas />
+          </ThemeProvider>
 
           <Wrapper>
             <AboutSection />
           </Wrapper>
           <SkillsSection />
+          <Projects />
         </div>
       </Body>
     </main>

@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { skills } from '../data/constans'
-
+import BgAnimation from "./BgAnimation/index.js";
 const Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -144,7 +144,11 @@ const Skills = () => {
 
         </SkillsContainer>
       </Wrapper>
+      <div className="absolute flex center inset-0 z-0 ml-40 mb-100 mt-0 p-60 mr-40">
+      <BgAnimation />
+    </div>
     </Container>
+
   )
 }
 
