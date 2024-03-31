@@ -9,6 +9,7 @@ import SkillsSection from "./componets/SkillsSection";
 import styled from "styled-components";
 import StarCanvas from "./componets/StarBackground";
 import Projects from "./componets/Projects/index";
+import ProjectDetails from "./componets/ProjectDetails/index";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -32,26 +33,35 @@ const Wrapper = styled.div`
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+
   return (
-    <main className="flex min-h-screen flex-col container ">
-      <Navbar />
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <main className="flex min-h-screen flex-col container ">
+        <Navbar />
 
-      <Body>
-        <div>
-          <HeroSection />
-          {/* <BgAnimation /> */}
+        <Body>
+          <div>
+            <HeroSection />
+            {/* <BgAnimation /> */}
+            <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+              <StarCanvas />
+            </ThemeProvider>
+            <Wrapper>
+              <AboutSection />
+            </Wrapper>
+            <SkillsSection />
 
-          <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-            <StarCanvas />
-          </ThemeProvider>
-
-          <Wrapper>
-            <AboutSection />
-          </Wrapper>
-          <SkillsSection />
-          <Projects />
-        </div>
-      </Body>
-    </main>
+            <Projects openModal={openModal} setOpenModal={setOpenModal} />
+            {openModal.state && (
+              <ProjectDetails
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+            )}
+          </div>
+        </Body>
+      </main>
+    </ThemeProvider>
   );
 }
