@@ -334,7 +334,7 @@
   ];
   
 
-  import TravelImage from '../assets/travel.png'; 
+  
   
   export const projects = [
     {
@@ -343,7 +343,7 @@
       date: "Jun 2023 - sep 2023",
       description:
         "Travel Infinity is a web application designed to custermize the travel planing experience. It provides a user-friendly interface for users to identify locations, resorts, events, and pre prepared packages.",
-      image: TravelImage,
+      image: "https://github.com/Piumikavindya/My_Portfolio/blob/main/my-portfolio/src/app/assets/travel.png?raw=true",
       tags: [
         "React Js",
         "MongoDb",
