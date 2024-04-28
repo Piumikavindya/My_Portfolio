@@ -10,7 +10,7 @@ import styled from "styled-components";
 import StarCanvas from "./componets/StarBackground";
 import Projects from "./componets/Projects/index";
 import ProjectDetails from "./componets/ProjectDetails/index";
-import Contact from "./componets/Contacts";
+import EmailSection from "./componets/EmailSection";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -61,7 +61,7 @@ export default function Home() {
               />
             )}
 
-            <Contact />
+            <EmailSection />
           </div>
         </Body>
       </main>

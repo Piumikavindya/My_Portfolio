@@ -1,20 +1,33 @@
-import { EmailTemplate } from '../../../components/EmailTemplate';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
-export async function POST() {
+// Create a Nodemailer transporter
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  service: "Gmail",
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.USER,
+    pass: process.env.PASSWORD,
+  },
+  tls: { rejectUnauthorized: false },
+});
+
+export async function POST(req, res) {
+  const { senderEmail, subject, message } = req.body;
+
   try {
-    const data = await resend.emails.send({
-      from: 'fromEmail',
-      to: [''],
-      subject: 'Hello world',
-      react:(<>
-      <p> Email Body</p></>),
+    // Send the email with the sender's email address dynamically
+    await transporter.sendMail({
+      from: process.env.EMAIL,
+      to: process.env.RES,
+      subject: subject,
+      text: `Sender's Email: ${senderEmail}\n\nSubject: ${subject}\n\nMessage: ${message}`,
     });
 
-    return Response.json(data);
+    return res.status(200).json({ success: true }); 
   } catch (error) {
-    return Response.json({ error });
+    console.error('An error occurred while sending the email:', error);
+    return res.status(500).json({ error: 'An error occurred while sending the email.' });
   }
 }
