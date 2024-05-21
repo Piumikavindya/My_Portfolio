@@ -200,12 +200,12 @@ const EmailSection = () => {
 
 
   return (
-    <Container>
+    <Container id= "contact">
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-  <ContactTitle>Email Me 🚀</ContactTitle>
+  <ContactTitle>Email Me 🚀: piyumikavindyappk@gmail.com</ContactTitle>
   <ContactInput type="email" id="senderEmail" placeholder="Your Email" name="senderEmail"  value={formData.senderEmail}
             onChange={(e) => setFormData({ ...formData, senderEmail: e.target.value })} />
   <ContactInput type="text" id="subject" placeholder="Subject" name="subject"  value={formData.subject}

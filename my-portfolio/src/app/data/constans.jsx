@@ -1,21 +1,21 @@
-// export const Bio = {
-//     name: "Rishav Chanda",
-//     roles: [
-//       "Full Stack Developer",
-//       "Android Developer",
-//       "UI/UX Designer",
-//       "Programmer",
-//     ],
-//     description:
-//       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-//     github: "https://github.com/rishavchanda",
-//     resume:
-//       "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
-//     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-//     twitter: "https://twitter.com/RishavChanda",
-//     insta: "https://www.instagram.com/rishav_chanda/",
-//     facebook: "https://www.facebook.com/rishav.chanda.165/",
-//   };
+export const Bio = {
+    // name: "Rishav Chanda",
+    // roles: [
+    //   "Full Stack Developer",
+    //   "Android Developer",
+    //   "UI/UX Designer",
+    //   "Programmer",
+    // ],
+    // description:
+    //   "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    github: "https://github.com/Piumikavindya",
+    resume: "https://drive.google.com/file/d/1R9ybm-4kE4F9QQuFHeTbb5ASBU-9pnSv/view?usp=drive_link",
+    linkedin: "www.linkedin.com/in/piumi-kavindya",
+    hackerrank: "https://www.hackerrank.com/piumikavindya",
+    // twitter: "https://twitter.com/RishavChanda",
+    // insta: "https://www.instagram.com/rishav_chanda/",
+    // facebook: "https://www.facebook.com/rishav.chanda.165/",
+  };
   
   export const skills = [
     {
@@ -361,7 +361,7 @@
       title: "Procurement Management System",
       date: "dec 2023 - Present",
       description:
-        " The system streamlines and automates various processes related to goods procurement, ensuring efficiency and budget compliance. And have used MVC architecture",
+        " The Web Procurement Management System (PMS) provides an extensive feature set with the goal of improving and optimizing the procurement procedure at the University of Ruhuna's Faculty of Engineering. Basically, the PMS lets users effectively create, and handle procurement requests. Real-time progress tracking, automated workflows for approval, and an established supplier database for convenient access are some of the key features.  ",                                                                                                               
       image:
         "https://github.com/Piumikavindya/My_Portfolio/blob/main/my-portfolio/src/app/assets/Procument.PNG?raw=true",
       tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Postman", "Tailwind css", "MVC"],

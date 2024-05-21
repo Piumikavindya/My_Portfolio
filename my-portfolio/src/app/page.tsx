@@ -11,6 +11,10 @@ import StarCanvas from "./componets/StarBackground";
 import Projects from "./componets/Projects/index";
 import ProjectDetails from "./componets/ProjectDetails/index";
 import EmailSection from "./componets/EmailSection";
+import Footer from "./componets/Footer";
+import BgAnimation from "./componets/BgAnimation";
+import MouseMove from "./componets/MouseMove";
+// import MouseMove from "./componets/MouseMove";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -44,7 +48,7 @@ export default function Home() {
         <Body>
           <div>
             <HeroSection />
-            {/* <BgAnimation /> */}
+            <MouseMove />
             <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
               <StarCanvas />
             </ThemeProvider>
@@ -62,6 +66,9 @@ export default function Home() {
             )}
 
             <EmailSection />
+            <Wrapper>
+              <Footer />
+            </Wrapper>
           </div>
         </Body>
       </main>

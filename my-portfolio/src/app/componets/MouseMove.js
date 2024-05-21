@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 
+
 const MouseMove = () => {
   const canvasRef = useRef(null);
-  const maxDistance = 90;
+  const maxDistance = 200;
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
