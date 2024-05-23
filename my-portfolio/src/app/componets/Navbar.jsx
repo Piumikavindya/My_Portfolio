@@ -10,6 +10,8 @@ import { useTheme } from 'styled-components';
 // import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 import _default from '../themes/default';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 export const Nav = styled.div`
     background-color: ${({theme}) => theme.card_light};
@@ -92,6 +94,7 @@ export const GitHubButton = styled.a`
   display: flex;
   align-items: center;
   height: 70%;
+  width : 50%;
   border-radius: 20px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
@@ -113,7 +116,7 @@ export const ButtonContainer = styled.div`
   width: 80%;  
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   padding: 0 6px;
   @media screen and (max-width: 768px) {
@@ -187,7 +190,7 @@ export const MobileMenuButton = styled.a`
   justify-content: center;
   display: flex;
   align-items: center;
-  height: 70%;
+  height: 90%;
   border-radius: 20px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
@@ -230,6 +233,64 @@ export  const MobileLink = styled.a`
 //   }
 // `;
 
+const SocialMediaIcons = styled.div`
+  display: flex;
+  margin-top: 0rem;
+  margin: 0px 3px;
+  font-size: 1rem; 
+  height: 100%;
+  width: 100%;
+`;
+
+const SocialMediaIcon = styled.a`
+display: flex;
+align-items: center;
+  margin: 10px 3px;
+  font-size: 25rem; 
+  height: 100%;
+  width: 100%;
+  color: #sC800FF;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
+export const ResumeButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 75%;
+  max-width: 180px;
+  height: 70%;
+  text-align: center;
+  padding: 16px 15px;
+  color: ${({ theme }) => theme.white};
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #1F2634;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 20px 20px 60px #1F2634;
+    filter: brightness(1);
+  }
+
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+`;
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -254,9 +315,17 @@ const Navbar = () => {
           <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
-        <ButtonContainer>
+        {/* <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+        
+        </ButtonContainer> */}
+        <ButtonContainer>
+          <ResumeButton href={Bio.resume} target="_blank">Check Resume</ResumeButton >
         </ButtonContainer>
+        <SocialMediaIcons>
+          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display"><GitHubIcon /></SocialMediaIcon>
+        </SocialMediaIcons>
         {
           isOpen &&
           <MobileMenu isOpen={isOpen}>

@@ -1,5 +1,42 @@
 import React from 'react';
+import styled from 'styled-components';
+import _default from '../themes/default';
+import { Bio } from '../data/constans';
 
+export const GitHubButton = styled.a`
+  border: 1.8px solid ${({ theme }) => theme.primary};
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  border-radius: 20px;
+  color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+  padding: 0 20px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.6s ease-in-out;
+    :hover {
+      background: ${({ theme }) => theme.primary};
+      color: ${({ theme }) => theme.white};     
+    }
+    @media screen and (max-width: 768px) { 
+    font-size: 14px;
+    }
+`;
+
+export const ButtonContainer = styled.div`
+  width: 80%;  
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 6px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
 export default function AboutSection() {
   return (
@@ -11,6 +48,8 @@ export default function AboutSection() {
         <p className='text-base mr-10 lg:text-lg'>
           I am a 3rd year undergraduate in computer engineering Faculty of engineering University of Ruhuna. I have experience with a variety of technologies including HTML, CSS,JavaScript, React, Node.js, and MongoDB and programming languages such as C, C++, Java. I am always looking to learn new things and improve my skills. In my free time, I enjoy reading, hiking, and spending time with my family.
         </p>
+
+       
       </div>
     
       <section className='text-white grid grid-cols-1'>
