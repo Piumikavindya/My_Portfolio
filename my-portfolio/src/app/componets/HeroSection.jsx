@@ -198,29 +198,29 @@ export default function HeroSection() {
 
   return (
     
-    <section className="relative">
-      {/* Container for the HeroSection content */}
-      <div className='grid grid-cols-l sm:grid-cols-12 my-12'>
-        <div className='col-span-7 place-self-center sm:text-left mt-20'>
-        <h1 className="mb-2 mr-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-  <span className="text-transparent text-center bg-clip-text bg-gradient-to-r from-purple-500 to-pink-400">
-    Hello, I'm
-  </span>
-  <br />
-  <TypeAnimation
-    sequence={[
-      'Piumi Kavindya',
-      1000,
-      'Piumi Kavindya',
-      1000,
-      // 'Web Developer', // Optional comment out
-      // 1000,
-    ]}
-    wrapper="span"
-    speed={50}
-    repeat={Infinity}
-  />
-</h1>
+<section className="relative">
+  {/* Container for the HeroSection content */}
+  <div className="grid grid-cols-l sm:grid-cols-12 my-12">
+    <div className="col-span-7 place-self-center sm:text-left mt-20">
+      <h1 className="mb-2 mr-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+        <span className="text-transparent text-center bg-clip-text bg-gradient-to-r from-purple-500 to-pink-400">
+          Hello, I'm{' '}
+        </span>
+        <br />
+        <TypeAnimation
+          sequence={[
+            'Piumi Kavindya',
+            1000,
+            'Piumi Kavindya',
+            1000,
+            // 'Web Developer', // Optional comment out
+            // 1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
+        />
+      </h1>
           <p style={{ color: '#a0d4f5', fontSize: '16px', marginBottom: '0.1rem' }} className="text-[#a0d4f5] custom-small-text  sm:text-lg mb-3 lg:text-xl">B.Sc. (HONS) IN COMPUTER ENGINEERING (UG)
 </p>
 <p style={{ color: '#a0d4f5', fontSize: '14px', marginTop: '0.5rem' }} className="text-[#add8f3] text-sm  sm:text-lg mb-4 lg:text-xl">UNIVERSITY OF RUHUNA
