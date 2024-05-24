@@ -1,6 +1,5 @@
 "use client";
 import React,{useState} from 'react';
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import MenuOverlay from './MenuOverlay';
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
