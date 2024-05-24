@@ -206,8 +206,7 @@ export default function HeroSection() {
         <span className="text-transparent text-center bg-clip-text bg-gradient-to-r from-purple-500 to-pink-400">
 
 
-          
-          Hello, I'm
+          Hello, I am
         </span>
         <br />
         <TypeAnimation
