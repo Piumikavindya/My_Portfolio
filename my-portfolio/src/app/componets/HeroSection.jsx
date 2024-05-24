@@ -200,6 +200,7 @@ export default function HeroSection() {
     
 <section className="relative">
   {/* Container for the HeroSection content */}
+  <StarCanvas />
   <div className="grid grid-cols-l sm:grid-cols-12 my-12">
     <div className="col-span-7 place-self-center sm:text-left mt-20">
       <h1 className="mb-2 mr-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
