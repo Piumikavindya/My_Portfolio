@@ -124,26 +124,26 @@ const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
-        <Desc className='text-[#ADB7BE] '>Here are some of my skills on which I have been working on for the past 2 years.
-        </Desc>
-        <SkillsContainer>
-          {skills.map((skill) => (
-            <Skill>
-              <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
-                    {item.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
-            </Skill>
+  <Title>Skills</Title>
+  <Desc className="text-[#ADB7BE]">
+    Here are some of my skills on which I have been working on for the past 2 years.
+  </Desc>
+  <SkillsContainer>
+    {skills.map((skill, index1) => ( // Added key prop with index1
+      <Skill key={index1}>
+        <SkillTitle>{skill.title}</SkillTitle>
+        <SkillList>
+          {skill.skills.map((item, index2) => ( // Added key prop with index2
+            <SkillItem key={index2}>
+              <SkillImage src={item.image} />
+              {item.name}
+            </SkillItem>
           ))}
-
-        </SkillsContainer>
-      </Wrapper>
+        </SkillList>
+      </Skill>
+    ))}
+  </SkillsContainer>
+</Wrapper>
       <div className="absolute flex center inset-0 z-0 ml-40 mb-100 mt-0 p-60 mr-40">
       <BgAnimation />
     </div>

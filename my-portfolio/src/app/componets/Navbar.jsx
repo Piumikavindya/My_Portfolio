@@ -260,9 +260,9 @@ export const ResumeButton = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin: 0px -50px 10px 100px;
+  margin: 0px -50px 0px 100px;
   width: 80%;
-  max-width: 220px;
+  max-width: 180px;
   height: 70%;
   text-align: center;
   padding: 16px 15px;
