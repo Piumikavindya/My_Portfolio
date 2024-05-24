@@ -204,7 +204,7 @@ export default function HeroSection() {
     <div className="col-span-7 place-self-center sm:text-left mt-20">
       <h1 className="mb-2 mr-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
         <span className="text-transparent text-center bg-clip-text bg-gradient-to-r from-purple-500 to-pink-400">
-          Hello, I'm{' '}
+          Hello, I'm
         </span>
         <br />
         <TypeAnimation
