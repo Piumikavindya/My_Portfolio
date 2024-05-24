@@ -1,7 +1,8 @@
 "use client";
 import React,{useState} from 'react';
-
-
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import MenuOverlay from './MenuOverlay';
+import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../data/constans';
 import { Close, CloseRounded } from '@mui/icons-material';
@@ -244,7 +245,7 @@ const SocialMediaIcons = styled.div`
 const SocialMediaIcon = styled.a`
 display: flex;
 align-items: center;
-  margin: 10px 3px;
+  margin: 0px 0px 10px 130px;
   font-size: 25rem; 
   height: 100%;
   width: 100%;
@@ -260,8 +261,9 @@ export const ResumeButton = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 75%;
-  max-width: 180px;
+  margin: 0px -50px 10px 100px;
+  width: 80%;
+  max-width: 220px;
   height: 70%;
   text-align: center;
   padding: 16px 15px;

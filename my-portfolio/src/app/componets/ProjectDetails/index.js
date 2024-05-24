@@ -208,7 +208,7 @@ const index = ({ openModal, setOpenModal }) => {
                     <Desc>{project?.description}</Desc>
                     {project.member && (
                         <>
-                            <Label>Members</Label>
+                            {/* <Label>Members</Label>
                             <Members>
                                 {project?.member.map((member) => (
                                     <Member>
@@ -222,7 +222,7 @@ const index = ({ openModal, setOpenModal }) => {
                                         </a>
                                     </Member>
                                 ))}
-                            </Members>
+                            </Members> */}
                         </>
                     )}
                     <ButtonGroup>
