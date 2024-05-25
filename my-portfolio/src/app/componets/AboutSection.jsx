@@ -16,7 +16,7 @@ export default function AboutSection() {
       </div>
       
       <section className='text-white grid grid-cols-1'>
-        <div className='py-16 px-6 md:py-20 md:px-12'>
+        <div className='py-5 px-6 md:py-20 md:px-12'>
           <h1 className='mb-7 text-3xl sm:text-4xl lg:text-5xl font-semibold'>Education</h1>
           <p>
             B.Sc. (Hons) in Computer Engineering (UG) <br />
