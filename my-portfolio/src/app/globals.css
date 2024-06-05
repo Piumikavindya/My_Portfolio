@@ -24,10 +24,22 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Ensure no horizontal overflow */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Media queries to handle specific screen widths */
+@media screen and (min-width: 670px) and (max-width: 766px),
+       screen and (min-width: 815px) and (max-width: 1024px) {
+  .main-container { 
+    width: 100%; /* Ensure it takes the full viewport width */
+    overflow-x: hidden; 
   }
 }

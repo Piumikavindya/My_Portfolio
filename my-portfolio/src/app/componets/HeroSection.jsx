@@ -198,7 +198,7 @@ export default function HeroSection() {
 
   return (
     
-<section className="relative">
+<section className="relative ">
   {/* Container for the HeroSection content */}
   <StarCanvas />
   <div className="grid grid-cols-l sm:grid-cols-12 my-12">

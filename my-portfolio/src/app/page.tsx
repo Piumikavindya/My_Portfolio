@@ -14,13 +14,22 @@ import EmailSection from "./componets/EmailSection";
 import Footer from "./componets/Footer";
 import BgAnimation from "./componets/BgAnimation";
 import MouseMove from "./componets/MouseMove";
-// import MouseMove from "./componets/MouseMove";
+import "./globals.css";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
-  width: 105%;
+  width: 105%; /* Change from 105% to 100% */
   overflow-x: hidden;
+
+  @media screen and (min-width: 670px) and (max-width: 766px),
+    screen and (min-width: 806px) and (max-width: 1024px) {
+    padding: 0;
+    margin: 0;
+    width: 105%;
+    overflow-x: hidden; /* This will hide any horizontal overflow */
+  }
 `;
+
 const Wrapper = styled.div`
   background: linear-gradient(
       38.73deg,
@@ -42,9 +51,8 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <main className="flex min-h-screen flex-col container ">
+      <main className="flex min-h-screen flex-col container main-container">
         <Navbar />
-
         <Body>
           <div>
             <HeroSection />
@@ -56,7 +64,6 @@ export default function Home() {
               <AboutSection />
             </Wrapper>
             <SkillsSection />
-
             <Projects openModal={openModal} setOpenModal={setOpenModal} />
             {openModal.state && (
               <ProjectDetails
@@ -64,7 +71,6 @@ export default function Home() {
                 setOpenModal={setOpenModal}
               />
             )}
-
             <EmailSection />
             <Wrapper>
               <Footer />

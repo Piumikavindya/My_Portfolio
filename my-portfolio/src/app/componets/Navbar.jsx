@@ -22,7 +22,16 @@ export const Nav = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
+  overflow-x: hidden;
 
+  @media screen and (min-width: 670px) and (max-width: 766px),
+  screen and (min-width: 806px) and (max-width: 1024px) {
+
+padding: 0;
+margin: 0;
+width: 105%;
+overflow-x: hidden; /* This will hide any horizontal overflow */
+}
   @media (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -35,6 +44,7 @@ export const NavbarContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
+  margin: 0;
   max-width: 1100px;
   padding: 0 24px;
 `;
