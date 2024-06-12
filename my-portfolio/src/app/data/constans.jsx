@@ -389,7 +389,7 @@ export const Bio = {
       date: "Jun 2024",
       description:
         "This is a simple To-Do-List app dockerized using CICD pipeline that allows users to add, delete, and mark tasks as completed. The app is built using ReactJS and styled with CSS. The app is responsive and works well on all devices. ",
-      image: "https://github.com/Piumikavindya/My_Portfolio/blob/main/my-portfolio/src/app/assets/ToDoList?raw=true",
+      image: "https://github.com/Piumikavindya/My_Portfolio/blob/main/my-portfolio/src/app/assets/ToDoList.PNG?raw=true",
       tags: [
         "React Js",
         "MongoDb",
@@ -410,7 +410,7 @@ export const Bio = {
       description:
         "POS (Point of Sale) system is a feature-rich application designed and It offers a seamless and user-friendly experience for managing various entities such as Users, Admins, Products, and Sales",
       image:
-        "https://private-user-images.githubusercontent.com/118907095/253820478-9640c60b-b6ca-433f-bbb7-abe3e88d6b4c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE5MDI1NDMsIm5iZiI6MTcxMTkwMjI0MywicGF0aCI6Ii8xMTg5MDcwOTUvMjUzODIwNDc4LTk2NDBjNjBiLWI2Y2EtNDMzZi1iYmI3LWFiZTNlODhkNmI0Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMzMVQxNjI0MDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mYTNlMDJmMmE3ZjNkYzM2YmIyZDliN2RhM2RhYmE5OGMxMGVmMzhjYzdiZTA3ODU2YWEwOGY2YzgwZmMxOWZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Ye6JO5Cb9QD4qunPc8M8VfvNcLQCR93KR3NpMDthP_M",
+        "https://github.com/Piumikavindya/My_Portfolio/blob/main/my-portfolio/src/app/assets/POS.PNG?raw=true",
       tags: [
         "Wpf",
         "Sqlite",
