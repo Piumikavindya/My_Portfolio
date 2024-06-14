@@ -16,6 +16,7 @@
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.16.1",
     "maath": "^0.10.7",
+    "medium-to-react": "^1.0.4",
     "next": "14.1.3",
     "nodemailer": "^6.9.13",
     "react": "^18",
