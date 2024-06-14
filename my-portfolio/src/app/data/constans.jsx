@@ -10,7 +10,7 @@ export const Bio = {
     //   "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/Piumikavindya",
     resume: "https://drive.google.com/file/d/18Mfyjir87Ux_qcBwKeNPkOIvm_LMGDCk/view?usp=drive_link",
-    linkedin: "https://efac-procument-managemant-system.vercel.app/",
+    linkedin: "https://www.linkedin.com/in/piumi-kavindya/",
     hackerrank: "https://www.hackerrank.com/piumikavindya",
     // twitter: "https://twitter.com/RishavChanda",
     // insta: "https://www.instagram.com/rishav_chanda/",
