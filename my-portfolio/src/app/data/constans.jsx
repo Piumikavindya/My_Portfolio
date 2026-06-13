@@ -279,7 +279,7 @@ export const projects = [
     date: "Software Architecture Project",
     description:
       "Architected a microservices-based Book Fair Stall Reservation and Management System for the Colombo International Book Fair. The platform enables vendor registration, interactive stall booking, real-time availability tracking, QR-based entry passes, automated email notifications, and organizer-side reservation management. Designed using C4 architectural modeling and technologies including React, Node.js, Express.js, MongoDB, Redis, and RabbitMQ to support scalable, event-driven reservation workflows and high-volume user traffic.",
-    image: "/assets/assets/bookfair.png",
+    image: "/assets/assets/stallbook.png",
     tags: [
       "React",
       "Node.js",
@@ -299,7 +299,7 @@ export const projects = [
     date: "With CI/CD Pipeline",
     description:
       "Secure travel planning application with user management, search and discovery, itinerary planning, booking integrations, and admin dashboards.",
-    image: "/assetss/assets/travel.png",
+    image: "/assets/assets/travel.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Docker", "CI/CD"],
     category: "web app",
     github: "https://github.com/Piumikavindya/Travel-App-4021.git",

@@ -248,7 +248,7 @@ export default function HeroSection() {
           </div>
           <div className="rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative mt-20">
             <Image
-              src="/assets/myProf.jpg"
+              src="/assets/myProf.jpeg"
               alt="my"
               width={300}
               height={300}
