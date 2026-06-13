@@ -256,7 +256,7 @@ export const projects = [
       "RAG",
       "PyTorch",
     ],
-    category: "ai",
+    category: ["ai", "web app"],
     github: "https://github.com/BlissMe",
     webapp: "https://blissme-v2.vercel.app/home",
   },

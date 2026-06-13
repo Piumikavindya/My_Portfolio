@@ -57,13 +57,26 @@ const Projects = ({ openModal, setOpenModal }) => {
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === 'all' &&
-            projects.map((project, index) => ( // Added key prop
-              <ProjectCard key={index} project={project} openModal={openModal} setOpenModal={setOpenModal} />
+            projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                project={project}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
             ))}
+
           {toggle !== 'all' &&
-            projects.filter((item) => item.category === toggle).map((project, index) => ( // Added key prop
-              <ProjectCard key={index} project={project} openModal={openModal} setOpenModal={setOpenModal} />
-            ))}
+            projects
+              .filter((item) => item.category.includes(toggle))
+              .map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  project={project}
+                  openModal={openModal}
+                  setOpenModal={setOpenModal}
+                />
+              ))}
         </CardContainer>
       </Wrapper>
     </Container>
