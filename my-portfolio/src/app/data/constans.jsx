@@ -245,7 +245,13 @@ export const projects = [
     description:
       "AI-Based Multi-Agent Depression Detection and Therapy System is a mental health support platform designed to help individuals who struggle to access treatment due to stigma, fear, cost, or lack of awareness. The system combines PHQ-9 assessment, NLP-based sentiment analysis, and voice emotion recognition within a multi-agent AI architecture to detect depression severity and provide personalized support. It features built-in therapies such as mindfulness exercises, guided meditation, mood tracking, breathing activities, and therapeutic games, with recommendations adapted through user history, session context, and feedback loops. Built using React, FastAPI, Node.js, MongoDB, RAG, and fine-tuned LLMs (Mistral-7B + QLoRA), the platform delivers accessible, privacy-focused, and stigma-free mental health assistance.",
     image: "/assets/assets/blissme.PNG",
-    gallery: ["/assets/assets/blissme.PNG", "/assets/assets/phq9Chat.PNG"],
+    gallery: [
+      "/assets/assets/blissme.PNG",
+      "/assets/assets/phq9Chat.PNG",
+      "/assets/assets/blissme1.PNG",
+      "/assets/assets/askMedicine.PNG",
+      "/assets/assets/voice.PNG",
+    ],
     highlights: [
       "Combines PHQ-9 assessment, sentiment analysis, and voice emotion recognition inside a multi-agent architecture.",
       "Delivers personalized therapy flows such as mindfulness exercises, guided meditation, mood tracking, and breathing activities.",
@@ -264,7 +270,7 @@ export const projects = [
     ],
     category: ["ai", "web app"],
     github: "https://github.com/BlissMe",
-    webapp: "https://blissme-v2.vercel.app/home",
+    webapp: "https://blissme.vercel.app/",
   },
   {
     id: 1,
@@ -273,6 +279,13 @@ export const projects = [
     description:
       "Developed a full-stack Procurement Management System for the Faculty of Engineering, University of Ruhuna, to digitize and automate procurement workflows. The platform manages requisitions, vendor registration, budget compliance, bid invitations, document generation, email notifications, and multi-stage approval processes while providing real-time procurement tracking for stakeholders. By replacing manual paper-based procedures, the system improved transparency, accountability, and operational efficiency, reducing procurement cycle times from 6–9 months to approximately 3–4 weeks. Built using React, Node.js, Express.js, MongoDB, Tailwind CSS, and MVC architecture.",
     image: "/assets/assets/Procument.PNG",
+    gallery: [
+      "/assets/assets/Procument.PNG",
+      "/assets/assets/proc1.png",
+      "/assets/assets/proc2.png",
+      "/assets/assets/proc3.png",
+      "/assets/assets/proc4.png",
+    ],
     highlights: [
       "Digitizes requisitions, vendor registration, bid invitations, document generation, and approval workflows.",
       "Improves procurement transparency and accountability while reducing cycle times from months to a few weeks.",
@@ -291,6 +304,13 @@ export const projects = [
     description:
       "Architected a microservices-based Book Fair Stall Reservation and Management System for the Colombo International Book Fair. The platform enables vendor registration, interactive stall booking, real-time availability tracking, QR-based entry passes, automated email notifications, and organizer-side reservation management. Designed using C4 architectural modeling and technologies including React, Node.js, Express.js, MongoDB, Redis, and RabbitMQ to support scalable, event-driven reservation workflows and high-volume user traffic.",
     image: "/assets/assets/stallbook.PNG",
+    gallery: [
+      "/assets/assets/stallbook.PNG",
+      "/assets/assets/stallbook1.png",
+      "/assets/assets/stallbook2.png",
+      "/assets/assets/stallbook3.png",
+      "/assets/assets/stallbook4.pmg",
+    ],
     highlights: [
       "Supports vendor registration, interactive stall booking, and real-time availability tracking.",
       "Adds QR-based entry passes and automated email notifications for organizer-side workflows.",
@@ -333,10 +353,6 @@ export const projects = [
     description:
       "Developed an AI-driven conversational depression screening system that transforms the clinically validated PHQ-9 assessment into an interactive chatbot experience. Designed an agentic RAG architecture using LangChain, MongoDB Atlas Vector Search, and GPT-based conversational agents, while fine-tuning Mistral-7B with LoRA for depression severity classification. The platform combines semantic search, retrieval-augmented generation, and NLP techniques to deliver empathetic interactions, automated PHQ-9 scoring, and accurate depression-level prediction, improving accessibility to mental health screening.",
     image: "/assets/assets/depression-analyzer.jpeg",
-    gallery: [
-      "/assets/assets/depression-analyzer.jpeg",
-      "/assets/assets/blissme.PNG",
-    ],
     highlights: [
       "Turns the PHQ-9 assessment into an interactive chatbot-style screening experience.",
       "Uses LangChain, MongoDB Atlas Vector Search, and GPT-based agents for retrieval-augmented dialogue.",
