@@ -520,15 +520,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                                             </LinkButton>
                                         )}
 
-                                        {project?.webapp && (
-                                            <LinkButtonAlt href={project.webapp} target="_blank" rel="noreferrer">
-                                                <LinkLabel>
-                                                    <OpenInNewRounded fontSize="small" />
-                                                    Demo
-                                                </LinkLabel>
-                                                <LinkMeta>Open the live app</LinkMeta>
-                                            </LinkButtonAlt>
-                                        )}
+
 
                                         <LinkButtonAlt href={project?.github || project?.webapp || "#"} target="_blank" rel="noreferrer">
                                             <LinkLabel>
@@ -543,13 +535,9 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                                 <Panel>
                                     <PanelTitle>Quick Actions</PanelTitle>
                                     <ButtonRow>
-                                        {project?.github && (
-                                            <ActionButton href={project.github} target="_blank" rel="noreferrer">
-                                                View Code
-                                            </ActionButton>
-                                        )}
-                                        {project?.webapp && (
-                                            <ActionButton href={project.webapp} target="_blank" rel="noreferrer" primary>
+
+                                        {project && (
+                                            <ActionButton href={project} target="_blank" rel="noreferrer" primary>
                                                 Live Demo
                                             </ActionButton>
                                         )}
