@@ -309,7 +309,7 @@ export const projects = [
       "/assets/assets/stallbook1.png",
       "/assets/assets/stallbook2.png",
       "/assets/assets/stallbook3.png",
-      "/assets/assets/stallbook4.pmg",
+      "/assets/assets/stallbook4.png",
     ],
     highlights: [
       "Supports vendor registration, interactive stall booking, and real-time availability tracking.",
