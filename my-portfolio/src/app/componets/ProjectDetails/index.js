@@ -402,6 +402,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
     }, [project]);
 
     const [activeImageIndex, setActiveImageIndex] = useState(0);
+    const [shareCopied, setShareCopied] = useState(false);
     const highlightItems = project?.highlights?.length ? project.highlights : createFallbackHighlights(project);
 
     useEffect(() => {
@@ -419,6 +420,19 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
     const goNext = () => {
         if (!hasMultipleImages) return;
         setActiveImageIndex((current) => (current + 1) % gallery.length);
+    };
+
+    const handleCopyProjectLink = async (event) => {
+        event.preventDefault();
+
+        const linkToCopy = project?.github || project?.webapp;
+        if (!linkToCopy || !navigator?.clipboard) {
+            return;
+        }
+
+        await navigator.clipboard.writeText(linkToCopy);
+        setShareCopied(true);
+        window.setTimeout(() => setShareCopied(false), 1500);
     };
 
     return (
@@ -522,12 +536,12 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
 
 
 
-                                        <LinkButtonAlt href={project?.github || project?.webapp || "#"} target="_blank" rel="noreferrer">
+                                        <LinkButtonAlt href="#" onClick={handleCopyProjectLink}>
                                             <LinkLabel>
                                                 <ShareRounded fontSize="small" />
                                                 Share Project
                                             </LinkLabel>
-                                            <LinkMeta>Copy the link later if needed</LinkMeta>
+                                            <LinkMeta>{shareCopied ? "GitHub link copied" : "Copy GitHub link"}</LinkMeta>
                                         </LinkButtonAlt>
                                     </LinkList>
                                 </Panel>
@@ -536,8 +550,8 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                                     <PanelTitle>Quick Actions</PanelTitle>
                                     <ButtonRow>
 
-                                        {project && (
-                                            <ActionButton href={project} target="_blank" rel="noreferrer" primary>
+                                        {project?.webapp && (
+                                            <ActionButton href={project.webapp} target="_blank" rel="noreferrer" primary>
                                                 Live Demo
                                             </ActionButton>
                                         )}

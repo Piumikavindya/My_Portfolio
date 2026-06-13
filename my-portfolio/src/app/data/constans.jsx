@@ -245,10 +245,7 @@ export const projects = [
     description:
       "AI-Based Multi-Agent Depression Detection and Therapy System is a mental health support platform designed to help individuals who struggle to access treatment due to stigma, fear, cost, or lack of awareness. The system combines PHQ-9 assessment, NLP-based sentiment analysis, and voice emotion recognition within a multi-agent AI architecture to detect depression severity and provide personalized support. It features built-in therapies such as mindfulness exercises, guided meditation, mood tracking, breathing activities, and therapeutic games, with recommendations adapted through user history, session context, and feedback loops. Built using React, FastAPI, Node.js, MongoDB, RAG, and fine-tuned LLMs (Mistral-7B + QLoRA), the platform delivers accessible, privacy-focused, and stigma-free mental health assistance.",
     image: "/assets/assets/blissme.PNG",
-    gallery: [
-      "/assets/assets/blissme.PNG",
-      "/assets/assets/depression-analyzer.jpeg",
-    ],
+    gallery: ["/assets/assets/blissme.PNG", "/assets/assets/phq9Chat.PNG"],
     highlights: [
       "Combines PHQ-9 assessment, sentiment analysis, and voice emotion recognition inside a multi-agent architecture.",
       "Delivers personalized therapy flows such as mindfulness exercises, guided meditation, mood tracking, and breathing activities.",
