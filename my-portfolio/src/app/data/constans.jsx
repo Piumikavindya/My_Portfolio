@@ -1,7 +1,7 @@
 export const Bio = {
   github: "https://github.com/Piumikavindya",
   resume:
-    "https://drive.google.com/file/d/18Mfyjir87Ux_qcBwKeNPkOIvm_LMGDCk/view?usp=drive_link",
+    "https://drive.google.com/file/d/1IwbsCXHTLsMFBVXo_vzO3oRofwfk6pLt/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/piumi-kavindya/",
   hackerrank: "https://www.hackerrank.com/piumikavindya",
 };
@@ -176,7 +176,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    role: "Software Engineer (Contract)",
+    role: "Software Engineer",
     company: "Agrithmics (Pvt) Ltd.",
     date: "Feb 2025 - Present",
     desc: "Designed and enhanced accounting, inventory, and payroll workflows in live production systems used by 10,000+ estate workers. Improved system reliability with RabbitMQ-based asynchronous processing and Redis caching, and maintained backend services using C#, .NET, SQL Server, and React.",
@@ -202,7 +202,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    school: "University of Ruhuna",
+    school: "Faculty of Engineering, University of Ruhuna",
     date: "Mar 2021 - Jan 2026",
     grade: "B.Sc. (Hons) in Computer Engineering",
     desc: "Faculty of Engineering, Galle, Sri Lanka.",
@@ -215,19 +215,19 @@ export const achievements = [
     id: 0,
     title: "First Place - Haxtreme 2.0 Coding Competition in Java",
     desc: "Secured first place among 70+ teams at the IEEE Haxtreme 2.0 Coding Competition, Faculty of Engineering, University of Ruhuna.",
-    link: "#",
+    link: "https://www.linkedin.com/posts/piumi-kavindya_haxtreme-codingcompetition-teamxcoders-ugcPost-7126072978651373569-2jMu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV40NsBLaqdRbmeSN_FdI4MmixRRrSjJX0",
   },
   {
     id: 1,
     title: "Best Scientific Paper - AI in Healthcare & AI in Education",
     desc: "Received Best Scientific Paper recognition for AI-Based Real-Time Multi-Agent Depression Detection System at AIMDA 2026.",
-    link: "#",
+    link: "https://www.linkedin.com/posts/piumi-kavindya_i-am-truly-honored-to-share-that-our-ugcPost-7432800340405567488-WpNv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV40NsBLaqdRbmeSN_FdI4MmixRRrSjJX0",
   },
   {
     id: 2,
     title: "Second Runner-Up - Mobitel Code Blast 2025",
     desc: "Final Year Project secured second runner-up at the Mobitel Code Blast hackathon among 20+ teams.",
-    link: "#",
+    link: "https://www.linkedin.com/posts/piumi-kavindya_teamblissme-sltmobitel-codeblast-ugcPost-7407011731585232896-YVk-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV40NsBLaqdRbmeSN_FdI4MmixRRrSjJX0",
   },
   {
     id: 3,
@@ -241,43 +241,45 @@ export const projects = [
   {
     id: 0,
     title: "AI-Based Multi Agent Depression Detection and Therapy System",
-    date: "AIMDA 2026",
+    date: "2025",
     description:
-      "A multimodal depression screening platform with multi-agent RAG architecture that combines PHQ-9 scoring, NLP sentiment analysis, and voice emotion recognition. Built with therapy-style LLM responses fine-tuned using Mistral-7B and QLoRA.",
-    image: "/assets/Capture.PNG",
+      "AI-Based Multi-Agent Depression Detection and Therapy System is a mental health support platform designed to help individuals who struggle to access treatment due to stigma, fear, cost, or lack of awareness. The system combines PHQ-9 assessment, NLP-based sentiment analysis, and voice emotion recognition within a multi-agent AI architecture to detect depression severity and provide personalized support. It features built-in therapies such as mindfulness exercises, guided meditation, mood tracking, breathing activities, and therapeutic games, with recommendations adapted through user history, session context, and feedback loops. Built using React, FastAPI, Node.js, MongoDB, RAG, and fine-tuned LLMs (Mistral-7B + QLoRA), the platform delivers accessible, privacy-focused, and stigma-free mental health assistance.",
+    image: "my-portfolio/src/app/assets/blissme.PNG",
     tags: [
       "React",
-      "Tailwind CSS",
       "FastAPI",
       "Node.js",
+      "Model Fine-Tuning",
+      "Prompt Engineering",
       "Express.js",
       "MongoDB",
       "RAG",
       "PyTorch",
     ],
     category: "web app",
-    github: "#",
-    webapp: "#",
+    github: "https://github.com/BlissMe",
+    webapp: "https://blissme-v2.vercel.app/home",
   },
   {
     id: 1,
     title: "Procurement Management System",
     date: "Faculty of Engineering Project",
     description:
-      "Digitized the faculty procurement workflow with vendor registration, goods procurement, budget compliance, multi-stage approvals, email notifications, and document generation.",
-    image: "/assets/Procument.PNG",
+      "Developed a full-stack Procurement Management System for the Faculty of Engineering, University of Ruhuna, to digitize and automate procurement workflows. The platform manages requisitions, vendor registration, budget compliance, bid invitations, document generation, email notifications, and multi-stage approval processes while providing real-time procurement tracking for stakeholders. By replacing manual paper-based procedures, the system improved transparency, accountability, and operational efficiency, reducing procurement cycle times from 6–9 months to approximately 3–4 weeks. Built using React, Node.js, Express.js, MongoDB, Tailwind CSS, and MVC architecture.",
+    image: "my-portfolio/src/app/assets/Procument.PNG",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "MVC"],
     category: "web app",
-    github: "#",
-    webapp: "#",
+    github:
+      "https://github.com/Piumikavindya/Procurement-Management-System.git",
+    webapp: "https://efac-procument-managemant-system.vercel.app/",
   },
   {
     id: 2,
     title: "Book Fair Stall Reservation and Management System",
     date: "Software Architecture Project",
     description:
-      "Scalable reservation management system for the Colombo International Book Fair with publisher reservations, automated email notifications, and unique QR passes.",
-    image: "/assets/travel.png",
+      "Architected a microservices-based Book Fair Stall Reservation and Management System for the Colombo International Book Fair. The platform enables vendor registration, interactive stall booking, real-time availability tracking, QR-based entry passes, automated email notifications, and organizer-side reservation management. Designed using C4 architectural modeling and technologies including React, Node.js, Express.js, MongoDB, Redis, and RabbitMQ to support scalable, event-driven reservation workflows and high-volume user traffic.",
+    image: "my-portfolio/src/app/assets/travel.png",
     tags: [
       "React",
       "Node.js",
@@ -288,8 +290,8 @@ export const projects = [
       "Microservices",
     ],
     category: "web app",
-    github: "#",
-    webapp: "#",
+    github: "https://github.com/StallBook/BookFair_Management_System.git",
+    webapp: "https://github.com/StallBook/BookFair_Management_System.git",
   },
   {
     id: 3,
@@ -297,10 +299,10 @@ export const projects = [
     date: "With CI/CD Pipeline",
     description:
       "Secure travel planning application with user management, search and discovery, itinerary planning, booking integrations, and admin dashboards.",
-    image: "/assets/ML.PNG",
+    image: "my-portfolio/src/app/assets/travel.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Docker", "CI/CD"],
     category: "web app",
-    github: "#",
-    webapp: "#",
+    github: "https://github.com/Piumikavindya/Travel-App-4021.git",
+    webapp: "https://piumikavindya.github.io/Travel-App-4021/",
   },
 ];
