@@ -244,7 +244,7 @@ export const projects = [
     date: "2025",
     description:
       "AI-Based Multi-Agent Depression Detection and Therapy System is a mental health support platform designed to help individuals who struggle to access treatment due to stigma, fear, cost, or lack of awareness. The system combines PHQ-9 assessment, NLP-based sentiment analysis, and voice emotion recognition within a multi-agent AI architecture to detect depression severity and provide personalized support. It features built-in therapies such as mindfulness exercises, guided meditation, mood tracking, breathing activities, and therapeutic games, with recommendations adapted through user history, session context, and feedback loops. Built using React, FastAPI, Node.js, MongoDB, RAG, and fine-tuned LLMs (Mistral-7B + QLoRA), the platform delivers accessible, privacy-focused, and stigma-free mental health assistance.",
-    image: "my-portfolio/src/app/assets/blissme.PNG",
+    image: "/assets/assets/blissme.PNG",
     tags: [
       "React",
       "FastAPI",
@@ -266,7 +266,7 @@ export const projects = [
     date: "Faculty of Engineering Project",
     description:
       "Developed a full-stack Procurement Management System for the Faculty of Engineering, University of Ruhuna, to digitize and automate procurement workflows. The platform manages requisitions, vendor registration, budget compliance, bid invitations, document generation, email notifications, and multi-stage approval processes while providing real-time procurement tracking for stakeholders. By replacing manual paper-based procedures, the system improved transparency, accountability, and operational efficiency, reducing procurement cycle times from 6–9 months to approximately 3–4 weeks. Built using React, Node.js, Express.js, MongoDB, Tailwind CSS, and MVC architecture.",
-    image: "my-portfolio/src/app/assets/Procument.PNG",
+    image: "/assets/assets/Procument.PNG",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "MVC"],
     category: "web app",
     github:
@@ -279,7 +279,7 @@ export const projects = [
     date: "Software Architecture Project",
     description:
       "Architected a microservices-based Book Fair Stall Reservation and Management System for the Colombo International Book Fair. The platform enables vendor registration, interactive stall booking, real-time availability tracking, QR-based entry passes, automated email notifications, and organizer-side reservation management. Designed using C4 architectural modeling and technologies including React, Node.js, Express.js, MongoDB, Redis, and RabbitMQ to support scalable, event-driven reservation workflows and high-volume user traffic.",
-    image: "my-portfolio/src/app/assets/travel.png",
+    image: "/assets/assets/bookfair.png",
     tags: [
       "React",
       "Node.js",
@@ -299,7 +299,7 @@ export const projects = [
     date: "With CI/CD Pipeline",
     description:
       "Secure travel planning application with user management, search and discovery, itinerary planning, booking integrations, and admin dashboards.",
-    image: "my-portfolio/src/app/assets/travel.png",
+    image: "/assetss/assets/travel.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Docker", "CI/CD"],
     category: "web app",
     github: "https://github.com/Piumikavindya/Travel-App-4021.git",
