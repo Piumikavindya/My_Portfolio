@@ -311,7 +311,7 @@ export const projects = [
     date: "Advanced Artificial Intelligence Project",
     description:
       "Developed an AI-driven conversational depression screening system that transforms the clinically validated PHQ-9 assessment into an interactive chatbot experience. Designed an agentic RAG architecture using LangChain, MongoDB Atlas Vector Search, and GPT-based conversational agents, while fine-tuning Mistral-7B with LoRA for depression severity classification. The platform combines semantic search, retrieval-augmented generation, and NLP techniques to deliver empathetic interactions, automated PHQ-9 scoring, and accurate depression-level prediction, improving accessibility to mental health screening.",
-    image: "/assets/depression-analyzer.jpeg",
+    image: "/assets/assets/depression-analyzer.jpeg",
     tags: [
       "LangChain",
       "FastAPI",
@@ -334,7 +334,7 @@ export const projects = [
     date: "Machine Learning Project",
     description:
       "Developed and evaluated machine learning models to predict household appliance energy consumption using environmental and sensor data. Performed end-to-end data analysis, preprocessing, feature engineering, and visualization to identify key factors influencing energy usage. Built and compared Linear Regression and Random Forest models to analyze prediction accuracy and support data-driven energy optimization. Implemented using Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.",
-    image: "/assets/ML.PNG",
+    image: "/assets/assets/ML.PNG",
     tags: [
       "Python",
       "Machine Learning",
