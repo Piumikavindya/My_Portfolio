@@ -1,16 +1,16 @@
 "use client";
-import React,{useState} from 'react';
-import MenuOverlay from './MenuOverlay';
-import { DiCssdeck } from 'react-icons/di';
-import { FaBars } from 'react-icons/fa';
-import { Bio } from '../data/constans';
-import { Close, CloseRounded } from '@mui/icons-material';
-import { useTheme } from 'styled-components';
+import React, { useState } from "react";
+import MenuOverlay from "./MenuOverlay";
+import { DiCssdeck } from "react-icons/di";
+import { FaBars } from "react-icons/fa";
+import { Bio } from "../data/constans";
+import { Close, CloseRounded } from "@mui/icons-material";
+import { useTheme } from "styled-components";
 // import { Link as LinkR } from 'react-router-dom';
-import styled from 'styled-components';
-import _default from '../themes/default';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub'
+import styled from "styled-components";
+import _default from "../themes/default";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
   height: 70px;
@@ -25,13 +25,12 @@ export const Nav = styled.div`
   overflow-x: hidden;
 
   @media screen and (min-width: 670px) and (max-width: 766px),
-  screen and (min-width: 806px) and (max-width: 1024px) {
-
-padding: 0;
-margin: 0;
-width: 105%;
-overflow-x: hidden; /* This will hide any horizontal overflow */
-}
+    screen and (min-width: 806px) and (max-width: 1024px) {
+    padding: 0;
+    margin: 0;
+    width: 105%;
+    overflow-x: hidden; /* This will hide any horizontal overflow */
+  }
   @media (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -147,11 +146,12 @@ export const MobileMenu = styled.div`
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.card_light + 99};
   transition: all 0.6s ease-in-out;
-  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+  transform: ${({ isOpen }) =>
+    isOpen ? "translateY(0)" : "translateY(-100%)"};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
 export const MobileMenuItems = styled.ul`
@@ -262,10 +262,9 @@ export const ResumeButton = styled.a`
   }
 `;
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const theme = useTheme()
+  const theme = useTheme();
   return (
     <Nav>
       <NavbarContainer>
@@ -275,52 +274,95 @@ const Navbar = () => {
           </a>
         </NavLogo> */}
         <MobileIcon>
-          <FaBars onClick={() => {
-            setIsOpen(!isOpen)
-          }} />
+          <FaBars
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          />
         </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#about'>Education</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#contact'>Contact</NavLink>
+          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#about">Experience</NavLink>
+          <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         {/* <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
         
         </ButtonContainer> */}
         <ButtonContainer>
-          <ResumeButton href={Bio.resume} target="_blank">Check Resume</ResumeButton >
+          <ResumeButton href={Bio.resume} target="_blank">
+            Check Resume
+          </ResumeButton>
         </ButtonContainer>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.github} target="display"><GitHubIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display">
+            <LinkedInIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display">
+            <GitHubIcon />
+          </SocialMediaIcon>
         </SocialMediaIcons>
-        {
-          isOpen &&
+        {isOpen && (
           <MobileMenu isOpen={isOpen}>
-            <MobileLink href="#about" onClick={() => {
-              setIsOpen(!isOpen)
-            }}>About</MobileLink>
-            <MobileLink href='#skills' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Skills</MobileLink>
-            <MobileLink href='#about' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Education</MobileLink>
-            <MobileLink href='#projects' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Projects</MobileLink>
-            <MobileLink href='#contact' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Contact</MobileLink>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+            <MobileLink
+              href="#about"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              About
+            </MobileLink>
+            <MobileLink
+              href="#skills"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Skills
+            </MobileLink>
+            <MobileLink
+              href="#about"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Experience
+            </MobileLink>
+            <MobileLink
+              href="#projects"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Projects
+            </MobileLink>
+            <MobileLink
+              href="#contact"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Contact
+            </MobileLink>
+            <GitHubButton
+              style={{
+                padding: "10px 16px",
+                background: `${theme.primary}`,
+                color: "white",
+                width: "max-content",
+              }}
+              href={Bio.github}
+              target="_blank"
+            >
+              Github Profile
+            </GitHubButton>
           </MobileMenu>
-        }
+        )}
       </NavbarContainer>
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
