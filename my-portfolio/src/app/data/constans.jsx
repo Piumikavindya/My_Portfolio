@@ -279,7 +279,7 @@ export const projects = [
     date: "Software Architecture Project",
     description:
       "Architected a microservices-based Book Fair Stall Reservation and Management System for the Colombo International Book Fair. The platform enables vendor registration, interactive stall booking, real-time availability tracking, QR-based entry passes, automated email notifications, and organizer-side reservation management. Designed using C4 architectural modeling and technologies including React, Node.js, Express.js, MongoDB, Redis, and RabbitMQ to support scalable, event-driven reservation workflows and high-volume user traffic.",
-    image: "/assets/assets/stallbook.png",
+    image: "/assets/assets/stallbook.PNG",
     tags: [
       "React",
       "Node.js",
