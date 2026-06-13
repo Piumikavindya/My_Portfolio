@@ -197,14 +197,7 @@ export default function HeroSection() {
             </span>
             <br />
             <TypeAnimation
-              sequence={[
-                "Piumi Kavindya",
-                1000,
-                ".NET & Full Stack Engineer",
-                1000,
-                "Computer Engineer",
-                1000,
-              ]}
+              sequence={["Piumi Kavindya", 1000, "Computer Engineer", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}

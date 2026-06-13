@@ -245,6 +245,15 @@ export const projects = [
     description:
       "AI-Based Multi-Agent Depression Detection and Therapy System is a mental health support platform designed to help individuals who struggle to access treatment due to stigma, fear, cost, or lack of awareness. The system combines PHQ-9 assessment, NLP-based sentiment analysis, and voice emotion recognition within a multi-agent AI architecture to detect depression severity and provide personalized support. It features built-in therapies such as mindfulness exercises, guided meditation, mood tracking, breathing activities, and therapeutic games, with recommendations adapted through user history, session context, and feedback loops. Built using React, FastAPI, Node.js, MongoDB, RAG, and fine-tuned LLMs (Mistral-7B + QLoRA), the platform delivers accessible, privacy-focused, and stigma-free mental health assistance.",
     image: "/assets/assets/blissme.PNG",
+    gallery: [
+      "/assets/assets/blissme.PNG",
+      "/assets/assets/depression-analyzer.jpeg",
+    ],
+    highlights: [
+      "Combines PHQ-9 assessment, sentiment analysis, and voice emotion recognition inside a multi-agent architecture.",
+      "Delivers personalized therapy flows such as mindfulness exercises, guided meditation, mood tracking, and breathing activities.",
+      "Uses RAG and fine-tuned Mistral-7B models to keep recommendations context-aware and privacy-focused.",
+    ],
     tags: [
       "React",
       "FastAPI",
@@ -267,6 +276,11 @@ export const projects = [
     description:
       "Developed a full-stack Procurement Management System for the Faculty of Engineering, University of Ruhuna, to digitize and automate procurement workflows. The platform manages requisitions, vendor registration, budget compliance, bid invitations, document generation, email notifications, and multi-stage approval processes while providing real-time procurement tracking for stakeholders. By replacing manual paper-based procedures, the system improved transparency, accountability, and operational efficiency, reducing procurement cycle times from 6–9 months to approximately 3–4 weeks. Built using React, Node.js, Express.js, MongoDB, Tailwind CSS, and MVC architecture.",
     image: "/assets/assets/Procument.PNG",
+    highlights: [
+      "Digitizes requisitions, vendor registration, bid invitations, document generation, and approval workflows.",
+      "Improves procurement transparency and accountability while reducing cycle times from months to a few weeks.",
+      "Built with a React, Node.js, Express.js, MongoDB, and Tailwind CSS stack using MVC architecture.",
+    ],
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "MVC"],
     category: "web app",
     github:
@@ -280,6 +294,11 @@ export const projects = [
     description:
       "Architected a microservices-based Book Fair Stall Reservation and Management System for the Colombo International Book Fair. The platform enables vendor registration, interactive stall booking, real-time availability tracking, QR-based entry passes, automated email notifications, and organizer-side reservation management. Designed using C4 architectural modeling and technologies including React, Node.js, Express.js, MongoDB, Redis, and RabbitMQ to support scalable, event-driven reservation workflows and high-volume user traffic.",
     image: "/assets/assets/stallbook.PNG",
+    highlights: [
+      "Supports vendor registration, interactive stall booking, and real-time availability tracking.",
+      "Adds QR-based entry passes and automated email notifications for organizer-side workflows.",
+      "Uses MongoDB, Redis, RabbitMQ, and Express.js to support event-driven reservation handling.",
+    ],
     tags: [
       "React",
       "Node.js",
@@ -300,6 +319,11 @@ export const projects = [
     description:
       "Secure travel planning application with user management, search and discovery, itinerary planning, booking integrations, and admin dashboards.",
     image: "/assets/assets/travel.png",
+    highlights: [
+      "Combines user management, search and discovery, itinerary planning, and booking integrations.",
+      "Designed with CI/CD in mind so changes can move quickly from development to deployment.",
+      "Uses Docker-backed delivery alongside a React and Node.js full-stack workflow.",
+    ],
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Docker", "CI/CD"],
     category: "web app",
     github: "https://github.com/Piumikavindya/Travel-App-4021.git",
@@ -312,6 +336,15 @@ export const projects = [
     description:
       "Developed an AI-driven conversational depression screening system that transforms the clinically validated PHQ-9 assessment into an interactive chatbot experience. Designed an agentic RAG architecture using LangChain, MongoDB Atlas Vector Search, and GPT-based conversational agents, while fine-tuning Mistral-7B with LoRA for depression severity classification. The platform combines semantic search, retrieval-augmented generation, and NLP techniques to deliver empathetic interactions, automated PHQ-9 scoring, and accurate depression-level prediction, improving accessibility to mental health screening.",
     image: "/assets/assets/depression-analyzer.jpeg",
+    gallery: [
+      "/assets/assets/depression-analyzer.jpeg",
+      "/assets/assets/blissme.PNG",
+    ],
+    highlights: [
+      "Turns the PHQ-9 assessment into an interactive chatbot-style screening experience.",
+      "Uses LangChain, MongoDB Atlas Vector Search, and GPT-based agents for retrieval-augmented dialogue.",
+      "Fine-tunes Mistral-7B with LoRA to predict depression severity with more empathetic interactions.",
+    ],
     tags: [
       "LangChain",
       "FastAPI",
@@ -335,6 +368,11 @@ export const projects = [
     description:
       "Developed and evaluated machine learning models to predict household appliance energy consumption using environmental and sensor data. Performed end-to-end data analysis, preprocessing, feature engineering, and visualization to identify key factors influencing energy usage. Built and compared Linear Regression and Random Forest models to analyze prediction accuracy and support data-driven energy optimization. Implemented using Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.",
     image: "/assets/assets/ML.PNG",
+    highlights: [
+      "Analyzes environmental and sensor data to predict appliance energy consumption.",
+      "Covers preprocessing, feature engineering, visualization, and model comparison end to end.",
+      "Benchmarks Linear Regression and Random Forest approaches for prediction accuracy.",
+    ],
     tags: [
       "Python",
       "Machine Learning",
@@ -359,6 +397,11 @@ export const projects = [
     description:
       "Developed a decentralized verification system to detect forged internship and job offer letters using Ethereum blockchain technology. The system generates a SHA-256 hash of each offer letter and stores it on the Ethereum Sepolia Testnet through a Solidity smart contract. During verification, document hashes are re-generated and compared against blockchain records to identify tampering and validate authenticity. The solution provides a secure, transparent, and trustless approach to document verification while demonstrating practical applications of blockchain, cryptography, and decentralized application development.",
     image: "/assets/assets/blockchain.jpg",
+    highlights: [
+      "Hashes internship and job offer documents and stores the proof on Ethereum Sepolia.",
+      "Compares regenerated hashes against blockchain records to detect tampering.",
+      "Demonstrates practical smart contract, cryptography, and Web3 verification workflows.",
+    ],
     tags: [
       "Blockchain",
       "Ethereum",
