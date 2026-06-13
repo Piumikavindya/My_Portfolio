@@ -37,21 +37,21 @@ const Projects = ({ openModal, setOpenModal }) => {
           <Divider />
           {toggle === 'ai' ? (
             <ToggleButton active value="ai" onClick={() => setToggle('ai')}>
-              AI
+              AI / ML
             </ToggleButton>
           ) : (
             <ToggleButton value="ai" onClick={() => setToggle('ai')}>
-              AI
+              AI / ML
             </ToggleButton>
           )}
           <Divider />
-          {toggle === 'machine learning' ? (
-            <ToggleButton active value="machine learning" onClick={() => setToggle('machine learning')}>
-              Machine Learning
+          {toggle === 'other' ? (
+            <ToggleButton active value="other" onClick={() => setToggle('other')}>
+              Other
             </ToggleButton>
           ) : (
-            <ToggleButton value="machine learning" onClick={() => setToggle('machine learning')}>
-              Machine Learning
+            <ToggleButton value="other" onClick={() => setToggle('other')}>
+              Other
             </ToggleButton>
           )}
         </ToggleButtonGroup>

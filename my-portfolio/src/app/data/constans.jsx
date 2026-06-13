@@ -346,10 +346,34 @@ export const projects = [
       "Pandas",
       "NumPy",
     ],
-    category: "machine learning",
+    category: "ai",
     github:
       "https://github.com/Piumikavindya/ML-Appliances-energy-prediction.git",
     webapp:
       "https://github.com/Piumikavindya/ML-Appliances-energy-prediction.git",
+  },
+  {
+    id: 6,
+    title: "Blockchain-Based Internship & Job Offer Verification System",
+    date: "Blockchain Application Project",
+    description:
+      "Developed a decentralized verification system to detect forged internship and job offer letters using Ethereum blockchain technology. The system generates a SHA-256 hash of each offer letter and stores it on the Ethereum Sepolia Testnet through a Solidity smart contract. During verification, document hashes are re-generated and compared against blockchain records to identify tampering and validate authenticity. The solution provides a secure, transparent, and trustless approach to document verification while demonstrating practical applications of blockchain, cryptography, and decentralized application development.",
+    image: "/assets/assets/blockchain.jpg",
+    tags: [
+      "Blockchain",
+      "Ethereum",
+      "Solidity",
+      "Smart Contracts",
+      "Web3",
+      "ethers.js",
+      "MetaMask",
+      "SHA-256",
+      "JavaScript",
+    ],
+    category: "other",
+    github:
+      "https://www.linkedin.com/posts/piumi-kavindya_blockchain-ethereum-web3-ugcPost-7442105487741005824-qCCf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV40NsBLaqdRbmeSN_FdI4MmixRRrSjJX0",
+    webapp:
+      "https://www.linkedin.com/posts/piumi-kavindya_blockchain-ethereum-web3-ugcPost-7442105487741005824-qCCf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV40NsBLaqdRbmeSN_FdI4MmixRRrSjJX0",
   },
 ];
