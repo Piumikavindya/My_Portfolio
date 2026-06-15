@@ -65,7 +65,6 @@ export default function AboutSection() {
           </div>
         </div>
       </section>
-
       <section className="text-white grid grid-cols-1 md:col-span-2">
         <div className="py-3 px-6 md:py-10 md:px-12">
           <h1 className="mb-7 text-3xl sm:text-4xl lg:text-5xl font-semibold">
