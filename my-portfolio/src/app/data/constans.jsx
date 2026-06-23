@@ -295,7 +295,7 @@ export const projects = [
     category: "web app",
     github:
       "https://github.com/Piumikavindya/Procurement-Management-System.git",
-    webapp: "https://efac-procument-managemant-system.vercel.app/",
+    webapp: "https://youtu.be/OLK8MJlHKAA",
   },
   {
     id: 2,
