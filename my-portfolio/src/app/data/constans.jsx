@@ -1,7 +1,7 @@
 export const Bio = {
   github: "https://github.com/Piumikavindya",
   resume:
-    "https://drive.google.com/file/d/1IwbsCXHTLsMFBVXo_vzO3oRofwfk6pLt/view?usp=drive_link",
+    "https://drive.google.com/file/d/1T-ANw1ROgxMbYSPKpVuG-eMHLt_IFqje/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/piumi-kavindya/",
   hackerrank: "https://www.hackerrank.com/piumikavindya",
 };
